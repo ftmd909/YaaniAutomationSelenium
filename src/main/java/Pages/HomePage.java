@@ -155,7 +155,7 @@ public class HomePage extends BasePage {
                 Assert.assertEquals(TranslateTxtControl,GetTxt); //çevirisi yapılması istenen kelime doğru çevrildi mi? kontrolü
                 waitForSecond(2);
                 //çeviri doğru yapıldıysa SOUT yazılır
-                ExtentTestManager.getTest().log(Status.PASS,"Çeviri sayfasi acildi ve Çeviri yapıldı");
+                ExtentTestManager.getTest().log(Status.PASS,"Ceviri sayfasi acildi ve Ceviri yapildi");
 
                 waitForSecond(5);
                 drivers().close();
