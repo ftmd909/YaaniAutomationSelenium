@@ -34,7 +34,7 @@ public class MenuPage extends BasePage{
         Boolean SettingsPageControll = isDisplay(SettingsControl);
         Assert.assertTrue(SettingsPageControll);
         if (SettingsPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Ayarlar sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Ayarlar sayfasi acildi");
         }
         waitForSecond(3);
         click(YaaniImageMenu);
@@ -52,7 +52,7 @@ public class MenuPage extends BasePage{
         Boolean PoliciesPageControll = isDisplay(PoliciesControl);
         Assert.assertTrue(PoliciesPageControll);
         if (PoliciesPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Yasal Sözleşmeler sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Yasal Sozlesmeler sayfasi acildi");
         }
         waitForSecond(3);
         click(YaaniImageMenu);
@@ -70,7 +70,7 @@ public class MenuPage extends BasePage{
         Boolean HelpPageControll = isDisplay(HelpControl);
         Assert.assertTrue(HelpPageControll);
         if (HelpPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Yardım sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Yardim sayfasi acildi");
         }
         waitForSecond(3);
         click(YaaniImageMenu);
@@ -88,7 +88,7 @@ public class MenuPage extends BasePage{
         Boolean AboutUsPageControll = isDisplay(AboutUsControl);
         Assert.assertTrue(AboutUsPageControll);
         if (AboutUsPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Hakkımızda sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Hakkimizda sayfasi acildi");
         }
         waitForSecond(3);
         click(YaaniImageMenu);

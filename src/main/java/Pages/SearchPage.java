@@ -50,7 +50,7 @@ public class SearchPage extends BasePage {
     public void setLoginValidation(){
 
         Assert.assertTrue(iconIsDisplay());
-        ExtentTestManager.getTest().log(Status.PASS,"Giriş Başarılı");
+        ExtentTestManager.getTest().log(Status.PASS,"Giris Basarili");
 
     }
     public void searchPagee() {
@@ -65,7 +65,7 @@ public class SearchPage extends BasePage {
         Boolean AllPageControll = isDisplay(AllTabControl);
         Assert.assertTrue(AllPageControll);
         if (AllPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Search'te Tümü sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Tumu sayfasi acildi");
         }
 
         /////////////////////////SEARCH-HABERLER/////////////////////
@@ -75,7 +75,7 @@ public class SearchPage extends BasePage {
         Boolean NewsPageControll = isDisplay(NewsTabControl);
         Assert.assertTrue(NewsPageControll);
         if (NewsPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Search'te Haberler sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Haberler sayfasi acildi");
         }
 
         /////////////////////////SEARCH-GÖRSELLER/////////////////////
@@ -85,7 +85,7 @@ public class SearchPage extends BasePage {
         Boolean ImagesPageControll = isDisplay(ImagesTabControl);
         Assert.assertTrue(ImagesPageControll);
         if (ImagesPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Search'te Görseller sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Gorseller sayfasi acildi");
         }
 
         /////////////////////////SEARCH-ALIŞVERİŞ/////////////////////
@@ -95,7 +95,7 @@ public class SearchPage extends BasePage {
         Boolean ShoppingPageControll = isDisplay(ShoppingTabControl);
         Assert.assertTrue(ShoppingPageControll);
         if (ShoppingPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Search'te Görseller sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Alisveris sayfasi acildi");
         }
 
         /////////////////////////SEARCH-VİDEOLAR/////////////////////
@@ -105,7 +105,7 @@ public class SearchPage extends BasePage {
         Boolean VideosPageControll = isDisplay(VideosTabControl);
         Assert.assertTrue(VideosPageControll);
         if (VideosPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Search'te Videolar sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Videolar sayfasi acildi");
         }
 
         /////////////////////////SEARCH-HARİTALAR/////////////////////
@@ -115,7 +115,7 @@ public class SearchPage extends BasePage {
         Boolean MapPageControll = isDisplay(MapTabControl);
         Assert.assertTrue(MapPageControll);
         if (MapPageControll==true) {
-            ExtentTestManager.getTest().log(Status.PASS,"Search'te Haritalar sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Haritalar sayfasi acildi");
         }
 
         waitForSecond(3);
@@ -187,7 +187,7 @@ public class SearchPage extends BasePage {
                 waitForSecond(5);
                 Boolean FacebookLoginControl = isDisplay(facebookIcon);
                 Assert.assertTrue(FacebookLoginControl);
-                ExtentTestManager.getTest().log(Status.PASS,"Facebook sayfası acildi");
+                ExtentTestManager.getTest().log(Status.PASS,"Facebook sayfasi acildi");
                 drivers().close();
                 break;
             }

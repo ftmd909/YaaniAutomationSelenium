@@ -56,7 +56,7 @@ public class HomePage extends BasePage {
                 Boolean DovizPageControll = isDisplay(DovizPageControl);
                 Assert.assertTrue(DovizPageControll);
                 if(DovizPageControll==true) {
-                    ExtentTestManager.getTest().log(Status.PASS,"Döviz sayfası acildi");
+                    ExtentTestManager.getTest().log(Status.PASS,"Doviz sayfasi acildi");
                 }
                 waitForSecond(3);
                 drivers().close();
@@ -78,7 +78,7 @@ public class HomePage extends BasePage {
                 Boolean PharmacyPageControll = isDisplay(PharmacyPageControl);
                 Assert.assertTrue(PharmacyPageControll);
                 if(PharmacyPageControll==true) {
-                    ExtentTestManager.getTest().log(Status.PASS,"Eczane sayfası acildi");
+                    ExtentTestManager.getTest().log(Status.PASS,"Eczane sayfasi acildi");
                 }
                 waitForSecond(3);
                 drivers().close();
@@ -100,7 +100,7 @@ public class HomePage extends BasePage {
                 Boolean SporPageControll = isDisplay(SporPageControl);
                 Assert.assertTrue(SporPageControll);
                 if(SporPageControll==true) {
-                    ExtentTestManager.getTest().log(Status.PASS,"Spor sayfası acildi");
+                    ExtentTestManager.getTest().log(Status.PASS,"Spor sayfasi acildi");
                 }
                 waitForSecond(3);
                 drivers().close();
@@ -122,7 +122,7 @@ public class HomePage extends BasePage {
                 Boolean WeatherPageControll = isDisplay(WeatherPageControl);
                 Assert.assertTrue(WeatherPageControll);
                 if(WeatherPageControll==true) {
-                    ExtentTestManager.getTest().log(Status.PASS,"Hava Durumu sayfası acildi");
+                    ExtentTestManager.getTest().log(Status.PASS,"Hava Durumu sayfasi acildi");
                 }
                 waitForSecond(3);
                 drivers().close();
@@ -155,7 +155,7 @@ public class HomePage extends BasePage {
                 Assert.assertEquals(TranslateTxtControl,GetTxt); //çevirisi yapılması istenen kelime doğru çevrildi mi? kontrolü
                 waitForSecond(2);
                 //çeviri doğru yapıldıysa SOUT yazılır
-                ExtentTestManager.getTest().log(Status.PASS,"Çeviri sayfası acildi ve Çeviri yapıldı");
+                ExtentTestManager.getTest().log(Status.PASS,"Çeviri sayfasi acildi ve Çeviri yapıldı");
 
                 waitForSecond(5);
                 drivers().close();
