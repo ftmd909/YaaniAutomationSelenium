@@ -1,5 +1,7 @@
 package Pages;
 
+import Utils.reports.ExtentTestManager;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -54,7 +56,7 @@ public class HomePage extends BasePage {
                 Boolean DovizPageControll = isDisplay(DovizPageControl);
                 Assert.assertTrue(DovizPageControll);
                 if(DovizPageControll==true) {
-                    System.out.println("Döviz sayfası acildi");
+                    ExtentTestManager.getTest().log(Status.PASS,"Döviz sayfası acildi");
                 }
                 waitForSecond(3);
                 drivers().close();
@@ -76,7 +78,7 @@ public class HomePage extends BasePage {
                 Boolean PharmacyPageControll = isDisplay(PharmacyPageControl);
                 Assert.assertTrue(PharmacyPageControll);
                 if(PharmacyPageControll==true) {
-                    System.out.println("Eczane sayfası acildi");
+                    ExtentTestManager.getTest().log(Status.PASS,"Eczane sayfası acildi");
                 }
                 waitForSecond(3);
                 drivers().close();
@@ -98,7 +100,7 @@ public class HomePage extends BasePage {
                 Boolean SporPageControll = isDisplay(SporPageControl);
                 Assert.assertTrue(SporPageControll);
                 if(SporPageControll==true) {
-                    System.out.println("Spor sayfası acildi");
+                    ExtentTestManager.getTest().log(Status.PASS,"Spor sayfası acildi");
                 }
                 waitForSecond(3);
                 drivers().close();
@@ -120,7 +122,7 @@ public class HomePage extends BasePage {
                 Boolean WeatherPageControll = isDisplay(WeatherPageControl);
                 Assert.assertTrue(WeatherPageControll);
                 if(WeatherPageControll==true) {
-                    System.out.println("Hava Durumu sayfası acildi");
+                    ExtentTestManager.getTest().log(Status.PASS,"Hava Durumu sayfası acildi");
                 }
                 waitForSecond(3);
                 drivers().close();
@@ -153,7 +155,7 @@ public class HomePage extends BasePage {
                 Assert.assertEquals(TranslateTxtControl,GetTxt); //çevirisi yapılması istenen kelime doğru çevrildi mi? kontrolü
                 waitForSecond(2);
                 //çeviri doğru yapıldıysa SOUT yazılır
-                System.out.println("Çeviri sayfası acildi ve Çeviri yapıldı");
+                ExtentTestManager.getTest().log(Status.PASS,"Çeviri sayfası acildi ve Çeviri yapıldı");
 
                 waitForSecond(5);
                 drivers().close();
@@ -190,7 +192,7 @@ public class HomePage extends BasePage {
         Boolean AddlistControl = isDisplay(newFavControl);
         Assert.assertTrue(AddlistControl);
         if(AddlistControl==true) {
-            System.out.println("Favori eklendi");
+            ExtentTestManager.getTest().log(Status.PASS,"Favori eklendi");
         }
 
     }
@@ -213,7 +215,7 @@ public class HomePage extends BasePage {
         //eklediğim favorinin silinip silinmediğini kontrol ettim. Silinmediyse Favorinin silinmediğine dair mesaj basacak
         Boolean deletedFavControl = getElementLocatedControl(By.xpath("(//span[normalize-space()='Youtube'])[1]"));
         if (deletedFavControl==true){
-            System.out.println("Favori silinemedi");
+            ExtentTestManager.getTest().log(Status.PASS,"Favori silinemedi");
         }
     }
 }

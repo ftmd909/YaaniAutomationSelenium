@@ -14,8 +14,8 @@ import java.util.Properties;
 public class Mailler {
 
     public static void send(String sub,String fileOutput){
-        String from="piaautomationtest@gmail.com"; //Mail Gönderen Hesap Bilgileri//
-        String pass="ykleskeqxgjrefmq"; //Gmail den alınan token//
+        String from="fatma.automation@gmail.com"; //Mail Gönderen Hesap Bilgileri//
+        String pass="kkvjtzzxxcbrypig"; //Gmail den alınan token//
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.socketFactory.port", "465");
@@ -33,7 +33,7 @@ public class Mailler {
         //compose message
         try {
             MimeMessage message = new MimeMessage(session);
-            message.addRecipient(Message.RecipientType.TO,new InternetAddress("selim.akar@pia-team.com"));
+            message.addRecipient(Message.RecipientType.TO,new InternetAddress("fatma.automation@gmail.com"));
             //message.addRecipient(Message.RecipientType.CC,new InternetAddress("cc"));
 
             message.setSubject(sub);

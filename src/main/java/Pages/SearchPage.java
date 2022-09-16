@@ -1,5 +1,7 @@
 package Pages;
 
+import Utils.reports.ExtentTestManager;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -48,7 +50,7 @@ public class SearchPage extends BasePage {
     public void setLoginValidation(){
 
         Assert.assertTrue(iconIsDisplay());
-        System.out.println("Giriş Başarılı");
+        ExtentTestManager.getTest().log(Status.PASS,"Giriş Başarılı");
 
     }
     public void searchPagee() {
@@ -63,7 +65,7 @@ public class SearchPage extends BasePage {
         Boolean AllPageControll = isDisplay(AllTabControl);
         Assert.assertTrue(AllPageControll);
         if (AllPageControll==true) {
-            System.out.println("Search'te Tümü sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Tümü sayfası acildi");
         }
 
         /////////////////////////SEARCH-HABERLER/////////////////////
@@ -73,7 +75,7 @@ public class SearchPage extends BasePage {
         Boolean NewsPageControll = isDisplay(NewsTabControl);
         Assert.assertTrue(NewsPageControll);
         if (NewsPageControll==true) {
-            System.out.println("Search'te Haberler sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Haberler sayfası acildi");
         }
 
         /////////////////////////SEARCH-GÖRSELLER/////////////////////
@@ -83,7 +85,7 @@ public class SearchPage extends BasePage {
         Boolean ImagesPageControll = isDisplay(ImagesTabControl);
         Assert.assertTrue(ImagesPageControll);
         if (ImagesPageControll==true) {
-            System.out.println("Search'te Görseller sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Görseller sayfası acildi");
         }
 
         /////////////////////////SEARCH-ALIŞVERİŞ/////////////////////
@@ -93,7 +95,7 @@ public class SearchPage extends BasePage {
         Boolean ShoppingPageControll = isDisplay(ShoppingTabControl);
         Assert.assertTrue(ShoppingPageControll);
         if (ShoppingPageControll==true) {
-            System.out.println("Search'te Görseller sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Görseller sayfası acildi");
         }
 
         /////////////////////////SEARCH-VİDEOLAR/////////////////////
@@ -103,7 +105,7 @@ public class SearchPage extends BasePage {
         Boolean VideosPageControll = isDisplay(VideosTabControl);
         Assert.assertTrue(VideosPageControll);
         if (VideosPageControll==true) {
-            System.out.println("Search'te Videolar sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Videolar sayfası acildi");
         }
 
         /////////////////////////SEARCH-HARİTALAR/////////////////////
@@ -113,7 +115,7 @@ public class SearchPage extends BasePage {
         Boolean MapPageControll = isDisplay(MapTabControl);
         Assert.assertTrue(MapPageControll);
         if (MapPageControll==true) {
-            System.out.println("Search'te Haritalar sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Search'te Haritalar sayfası acildi");
         }
 
         waitForSecond(3);
@@ -146,9 +148,9 @@ public class SearchPage extends BasePage {
                 waitForSecond(5);
                 click(singPlay);            /////şarkı oynatılır
                 waitForSecond(6);
-                System.out.println("Sarki caldi");
+                ExtentTestManager.getTest().log(Status.PASS,"Sarki caldi");
                 click(singPlay);           //////şarkı durdurulur
-                System.out.println("Sarki durdu");
+                ExtentTestManager.getTest().log(Status.PASS,"Sarki durdu");
                 drivers().close();
                 break;
             }
@@ -185,7 +187,7 @@ public class SearchPage extends BasePage {
                 waitForSecond(5);
                 Boolean FacebookLoginControl = isDisplay(facebookIcon);
                 Assert.assertTrue(FacebookLoginControl);
-                System.out.println("Facebook sayfası acildi");
+                ExtentTestManager.getTest().log(Status.PASS,"Facebook sayfası acildi");
                 drivers().close();
                 break;
             }

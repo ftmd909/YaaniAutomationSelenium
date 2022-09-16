@@ -1,5 +1,7 @@
 package Pages;
 
+import Utils.reports.ExtentTestManager;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -32,7 +34,7 @@ public class MenuPage extends BasePage{
         Boolean SettingsPageControll = isDisplay(SettingsControl);
         Assert.assertTrue(SettingsPageControll);
         if (SettingsPageControll==true) {
-            System.out.println("Ayarlar sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Ayarlar sayfası acildi");
         }
         waitForSecond(3);
         click(YaaniImageMenu);
@@ -50,7 +52,7 @@ public class MenuPage extends BasePage{
         Boolean PoliciesPageControll = isDisplay(PoliciesControl);
         Assert.assertTrue(PoliciesPageControll);
         if (PoliciesPageControll==true) {
-            System.out.println("Yasal Sözleşmeler sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Yasal Sözleşmeler sayfası acildi");
         }
         waitForSecond(3);
         click(YaaniImageMenu);
@@ -68,7 +70,7 @@ public class MenuPage extends BasePage{
         Boolean HelpPageControll = isDisplay(HelpControl);
         Assert.assertTrue(HelpPageControll);
         if (HelpPageControll==true) {
-            System.out.println("Yardım sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Yardım sayfası acildi");
         }
         waitForSecond(3);
         click(YaaniImageMenu);
@@ -86,7 +88,7 @@ public class MenuPage extends BasePage{
         Boolean AboutUsPageControll = isDisplay(AboutUsControl);
         Assert.assertTrue(AboutUsPageControll);
         if (AboutUsPageControll==true) {
-            System.out.println("Hakkımızda sayfası acildi");
+            ExtentTestManager.getTest().log(Status.PASS,"Hakkımızda sayfası acildi");
         }
         waitForSecond(3);
         click(YaaniImageMenu);
